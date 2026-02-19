@@ -3,8 +3,7 @@
   <name>ros2_custom_msgs</name>
   <version>0.0.0</version>
   <description>Custom message example</description>
-
-  <maintainer email="you@todo.com">your_name</maintainer>
+  <maintainer email="you@todo.com">you</maintainer>
   <license>Apache-2.0</license>
 
   <buildtool_depend>ament_cmake</buildtool_depend>
