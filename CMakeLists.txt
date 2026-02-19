@@ -19,7 +19,8 @@ add_dependencies(status_publisher
 )
 
 rosidl_get_typesupport_target(cpp_typesupport_target
-  ${PROJECT_NAME} "rosidl_typesupport_cpp")
+  ${PROJECT_NAME} "rosidl_typesupport_cpp"
+)
 
 target_link_libraries(status_publisher
   ${cpp_typesupport_target}
@@ -28,6 +29,10 @@ target_link_libraries(status_publisher
 install(TARGETS
   status_publisher
   DESTINATION lib/${PROJECT_NAME}
+)
+
+install(DIRECTORY msg
+  DESTINATION share/${PROJECT_NAME}
 )
 
 ament_package()
